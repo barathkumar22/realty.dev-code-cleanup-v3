@@ -16,7 +16,7 @@ public interface Requirementrepo extends JpaRepository <Requirementrepo,Long> {
 
     @Query("UPDATE Requirement c SET c.Requirement = :Requirement WHERE c.id = :RequirementId")
     List updatepublishRequirement(@Param("RequirementId") String[] RequirementId);
-   // int updateRequirement(@Param("RequirementId") int RequirementId,@Param("Requirement") String Requirement);
+    //int updateRequirement(@Param("RequirementId") int RequirementId,@Param("Requirement") String Requirement);
 
     @Query ("UPDATE Requiremnet c SET c.Requirement = :Requirement WHERE c.id = :RequirementId")
     List updateunPublishRequirement(@Param("RequirementId") String[] RequirementId);
